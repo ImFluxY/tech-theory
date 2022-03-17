@@ -1,0 +1,246 @@
+/*--- All ---*/
+
+:root {
+    --primary-color: #8C50FF;
+    --second-color: #0D0D0D;
+    --color-white: #FFFFFF;
+}
+
+html {
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tt-titre {
+    margin: 0;
+    font-size: 45px;
+}
+
+.tt-desc {
+    color: var(--primary-color);
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.connect-text {
+    margin: 5px;
+}
+
+.formulaire {
+    margin: 20px 0;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.connect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-connect {
+    background-color: var(--color-white);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    width: 1700px;
+}
+
+.cadre {
+    font-family: poppins;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 60px 100px;
+}
+
+.acceuil {
+    margin-right: 50px;
+}
+
+.date-tel, .mdp-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.label-change-ins {
+    font-size: 14px;
+}
+
+.label-po {
+    font-size: 15px;
+    font-weight: 900;
+    margin-left: -10px;
+}
+
+.checkbox-po {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.po-input-checkbox {
+    height: 15px;
+}
+
+.strong-po {
+    color: var(--primary-color);
+}
+
+/*--- Partie droite ---*/
+
+.compte {
+    border-radius: 15px;
+    box-shadow: 10px 10px 30px grey;
+    text-align: center;
+    padding: 15px 30px 15px 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.compte p {
+    font-size: 15px;
+    margin: 20px 0;
+}
+
+.champs {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 15px 0 15px 0;
+}
+
+input,
+select {
+    border-radius: 50px;
+    border: 2px solid var(--primary-color);
+    height: 3px;
+    padding: 15px;
+    outline: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+button {
+    border-radius: 50px;
+    color: var(--color-white);
+    background-color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: poppins;
+    padding: 15px 20px;
+    font-weight: 500;
+}
+
+.erreur {
+    color: red;
+    font-weight: lighter;
+}
+
+/*--- Deconnexion ---*/
+
+.deconnexion {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.html-deco {
+    background-color: var(--color-white);
+}
+
+.deconnexion p {
+    font-family: poppins;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    margin: 25px;
+}
+
+.retourIndex {
+    text-align: center;
+    font-size: 30px;
+}
+
+/*--- Responsive ---*/
+/* Portable à tablette */
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+
+    img {
+        display: none;
+    }
+
+    .cadre {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .compte {
+        margin: 20px 0 50px 0;
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: 70px;
+    }
+    
+    .acceuil p {
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    input, select, button {
+        margin: auto;
+        width: 400px;
+        height: 40px;
+        font-size: 25px;
+    } 
+    
+    label {
+        font-size: 30px;
+        text-align: center;
+    }
+    
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1025px) and (max-width: 1919px) {
+    img {
+        width: 85%;
+    }
+
+    .acceuil {
+        padding-left: 30px;
+    }
+
+    .cadre {
+        padding-right: 50px;
+    }
+
+    .compte {
+        margin: 25px 0 25px 0;
+    }
+}

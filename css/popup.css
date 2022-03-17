@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+:root {
+    --primary-color: #8C50FF;
+    --second-color: #0D0D0D;
+    --color-white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.assombrissementPopup {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100vw;
+    height: 100vh;
+    transform: scaleZ(0);
+    transition: transform 100ms linear;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.assombrissementPopup.visible {
+    width: 100vw;
+    height: 100vh;
+    transform: scaleZ(1);
+    transition: transform 100ms linear;
+}
+
+.container-popup {
+    width: 400px;
+    height: 250px;
+    position: fixed;
+    border-radius: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-400%) translateX(-50%);
+    transition: transform 400ms linear;
+    background: var(--color-white);
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    box-shadow: 0 0 15px var(--primary-color);
+}
+
+.container-popup.visible {
+    transform: translateY(-50%) translateX(-50%);
+    transition: transform 400ms linear;
+}
+
+.content-popup {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.h2-popup {
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.p-popup {
+    font-weight: 500;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.sec-input-popup {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.sec-input-popup label {
+    font-weight: 400;
+}
+
+
+.content-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn-popup {
+    color: var(--primary-color);
+    background-color: var(--color-white);
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    padding: 7px 10px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    transition: 0.3s;
+    margin: 0 15px;
+}
+
+.btn-popup:hover {
+    color: var(--color-white);
+    background-color: var(--primary-color);
+    transition: 0.3s;
+}
+
+.btn-popup2 {
+    color: var(--color-white);
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    padding: 7px 10px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0 15px;
+}
+
+.btn-popup:hover {
+    color: var(--color-white);
+    background-color: var(--primary-color);
+    transition: 0.3s;
+}
+
+input[type="checkbox"].input-popup {
+    -border-radius: 4px;
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+input[type="checkbox"].input-popup:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #28a745;
+    border-color: #28a745;
+}
